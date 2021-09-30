@@ -28,7 +28,8 @@ async def start(bot, cmd):
                 ident, file_id = cmd.text.split("_-_-_-_")
                 await bot.send_message(
                     chat_id=cmd.from_user.id,
-                    text="**Please Join My Updates Channel to use this Bot!**",
+                    text="**തായെ കാണുന്ന ചാനലിൽ നിങ്ങൾ ഇല്ല അത് കൊണ്ട് നിങ്ങൾക് സിനിമ കിട്ടില്ല...
+സിനിമ കിട്ടാനായി താഴെ കാണുന്ന JOIN MY UPDATE CHANNEL എന്ന ബട്ടനിൽ ക്ലിക്ക് ചെയ്തു ഞങ്ങളുടെ മെയിൻ ചാനലിൽ ജോയിൻ ചെയ്യുക എങ്കിൽ മാത്രമേ നിങ്ങൾക്ക് മൂവി ഈ ബോട്ട് വഴി ലഭിക്കുകയുള്ളു. അതു കഴ്ഞ്ഞു തായേ കാണുന്ന 👉"Try again"👈 എന്നുള്ളതിൽ ക്ലിക്ക് ചെയ്തു Start കൊടുത്താൽ നിങ്ങൾക്ക് മൂവി കിട്ടുന്നതാണ്...😁😁*",
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
@@ -68,9 +69,6 @@ async def start(bot, cmd):
                 buttons = [
                     [
                         InlineKeyboardButton('🔥JOIN MAIN CHANNEL🔥', url="https://t.me/moviesbizzmalayalam")
-                    ],
-                    [
-                        InlineKeyboardButton('🔍 Search again 🔎', switch_inline_query_current_chat='')
                     ]
                     ]
                 await bot.send_cached_media(
@@ -85,7 +83,8 @@ async def start(bot, cmd):
         invite_link = await bot.create_chat_invite_link(int(AUTH_CHANNEL))
         await bot.send_message(
             chat_id=cmd.from_user.id,
-            text="**Please Join My Updates Channel to use this Bot!**",
+            text="**തായെ കാണുന്ന ചാനലിൽ നിങ്ങൾ ഇല്ല അത് കൊണ്ട് നിങ്ങൾക് സിനിമ കിട്ടില്ല...
+സിനിമ കിട്ടാനായി താഴെ കാണുന്ന JOIN MY UPDATE CHANNEL എന്ന ബട്ടനിൽ ക്ലിക്ക് ചെയ്തു ഞങ്ങളുടെ മെയിൻ ചാനലിൽ ജോയിൻ ചെയ്യുക എങ്കിൽ മാത്രമേ നിങ്ങൾക്ക് മൂവി ഈ ബോട്ട് വഴി ലഭിക്കുകയുള്ളു. അതു കഴ്ഞ്ഞു തായേ കാണുന്ന 👉"Try again"👈 എന്നുള്ളതിൽ ക്ലിക്ക് ചെയ്തു Start കൊടുത്താൽ നിങ്ങൾക്ക് മൂവി കിട്ടുന്നതാണ്...😁😁**",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
@@ -102,11 +101,8 @@ async def start(bot, cmd):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Search Here", switch_inline_query_current_chat=''),
-                        InlineKeyboardButton("Bot Updates", url="https://t.me/moviesbizzmalayalam")
-                    ],
-                    [
-                        InlineKeyboardButton("About", callback_data="about")
+                        InlineKeyboardButton("GROUP", url="https://t.me/moviesbizz2_0"),
+                        InlineKeyboardButton("CHANNEL", url="https://t.me/moviesbizzmalayalam")
                     ]
                 ]
             )
@@ -195,8 +191,8 @@ async def delete(bot, message):
 async def bot_info(bot, message):
     buttons = [
         [
-            InlineKeyboardButton('Update Channel', url='https://t.me/Mo_Tech_YT'),
-            InlineKeyboardButton('Video', url=f'{TUTORIAL}')
+            InlineKeyboardButton('GROUP', url='https://t.me/moviesbizz2_0'),
+            InlineKeyboardButton('CHANNEL', url="https://t.me/moviesbizzmalayalam")
         ]
         ]
     await message.reply(text=f"<b>Developer : <a href='https://t.me/subinps_bot'>SUBIN</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nSource Code : <a href='{TUTORIAL}'>Click here</a>\nUpdate Channel : <a href='https://t.me/Mo_Tech_YT'>Mo Tech YT</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
