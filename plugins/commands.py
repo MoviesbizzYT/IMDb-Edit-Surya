@@ -67,7 +67,7 @@ async def start(bot, cmd):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('🔥JOIN MAIN CHANNEL🔥', url="https://t.me/moviesbizzmalayalam")
+                        InlineKeyboardButton('🔥JOIN MAIN GROUP🔥', url="https://t.me/joinchat/mm9P7uDDH8Y0YTM1")
                     ]
                     ]
                 await bot.send_cached_media(
@@ -99,7 +99,7 @@ async def start(bot, cmd):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("GROUP", url="https://t.me/moviesbizz2_0"),
+                        InlineKeyboardButton("GROUP", url="https://t.me/joinchat/mm9P7uDDH8Y0YTM1"),
                         InlineKeyboardButton("CHANNEL", url="https://t.me/moviesbizzmalayalam")
                     ]
                 ]
@@ -189,7 +189,7 @@ async def delete(bot, message):
 async def bot_info(bot, message):
     buttons = [
         [
-            InlineKeyboardButton('GROUP', url='https://t.me/moviesbizz2_0'),
+            InlineKeyboardButton('GROUP', url='https://t.me/joinchat/mm9P7uDDH8Y0YTM1'),
             InlineKeyboardButton('CHANNEL', url="https://t.me/moviesbizzmalayalam")
         ]
         ]
